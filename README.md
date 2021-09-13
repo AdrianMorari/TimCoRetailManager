@@ -8,3 +8,7 @@ Postman API credentials:
   Password: "Pwd12345."
   
 <hr/>
+
+Nu-Get:
+
+Swashbuckle
