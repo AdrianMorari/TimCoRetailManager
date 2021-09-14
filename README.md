@@ -1,6 +1,10 @@
 # TimCo Retail Manager
 A retail management system built by TimCo Enterprise Solutions
 <hr/>
+Used Software:
+
+Postman
+
 Postman API credentials:
 
   Email: "fanatik1mc@gmail.com"
@@ -12,3 +16,7 @@ Postman API credentials:
 Nu-Get:
 
 Swashbuckle
+
+Caliburn.Micro(XAML)
+
+Autofac
