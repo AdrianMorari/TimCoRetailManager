@@ -18,3 +18,5 @@ Nu-Get:
 Swashbuckle
 
 Caliburn.Micro(XAML)
+
+Autofac
