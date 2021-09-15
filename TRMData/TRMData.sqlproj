@@ -62,4 +62,14 @@
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="PublishLocations" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tabels\User.sql" />
+    <Build Include="dbo\Tabels\Sale.sql" />
+    <Build Include="dbo\Tabels\SaleDetail.sql" />
+    <Build Include="dbo\Tabels\Product.sql" />
+    <Build Include="dbo\Tabels\Inventory.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TRMData.publish.xml" />
+  </ItemGroup>
 </Project>
