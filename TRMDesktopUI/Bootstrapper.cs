@@ -19,10 +19,10 @@ namespace TRMDesktopUI
         {
             Initialize();
 
-            //ConventionManager.AddElementConvention<PasswordBox>(
-            //PasswordBoxHelper.BoundPasswordProperty,
-            //"Password",
-            //"PasswordChanged");
+            ConventionManager.AddElementConvention<PasswordBox>(
+            PasswordBoxHelper.BoundPasswordProperty,
+            "Password",
+            "PasswordChanged");
         }
 
         protected override void Configure()
@@ -38,8 +38,8 @@ namespace TRMDesktopUI
                 .Where(type => type.IsClass)
                 .Where(type => type.Name.EndsWith("ViewModel"))
                 .ToList()
-                .ForEach(viewmodelType => _container.RegisterPerRequest(
-                    viewmodelType, viewmodelType.ToString(), viewmodelType));
+                .ForEach(viewModelType => _container.RegisterPerRequest(
+                    viewModelType, viewModelType.ToString(), viewModelType));
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
