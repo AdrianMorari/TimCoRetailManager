@@ -4,24 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using TRMDataManager.Library.DataAccess;
+using TRMDataManager.Library.Models;
 
 namespace TRMDataManager.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class UserController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        public List<UserModel> GetById()
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
 
-            return new string[] { "value1", "value2", userId };
-        }
+            UserData data = new UserData();
 
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
+            return data.GetUserById(userId);
         }
     }
 }

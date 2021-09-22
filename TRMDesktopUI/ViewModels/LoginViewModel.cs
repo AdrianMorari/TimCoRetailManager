@@ -14,8 +14,6 @@ namespace TRMDesktopUI.ViewModels
         private string _password;
         private IAPIHelper _apiHelper;
         private string _errorMessage;
-        private bool _isErrorVisible;
-
         public LoginViewModel(IAPIHelper apiHelper)
         {
             _apiHelper = apiHelper;
