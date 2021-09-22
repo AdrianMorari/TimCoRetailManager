@@ -20,3 +20,5 @@ Swashbuckle
 Caliburn.Micro(XAML)
 
 Autofac
+
+Dapper
