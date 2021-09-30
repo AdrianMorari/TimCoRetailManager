@@ -22,3 +22,5 @@ Caliburn.Micro(XAML)
 Autofac
 
 Dapper
+
+Automapper
